@@ -1,75 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xprova Navbar</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #c6c800; /* Cor de fundo amarela */
-    }
-    .navbar-custom {
-      background-color: #c6c800;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
-      height: 60px;
-    }
-    .nav-link {
-      color: black !important;
-      font-weight: bold;
-      margin: 0 10px;
-    }
-    .btn-login {
-      background-color: #263238;
-      color: white;
-      font-weight: bold;
-      border-radius: 20px;
-      padding: 6px 20px;
-      margin-right: 10px;
-    }
-    .btn-assinatura {
-      background-color: #15928F;
-      color: #263238;
-      font-weight: bold;
-      border-radius: 20px;
-      padding: 6px 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo da Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" href="#">
-      <img src="logo.png" alt="Xprova logo"> <!-- Substitua por caminho real -->
-    </a>
-
-    <div class="collapse navbar-collapse justify-content-center">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Planos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
-        </li>
-      </ul>
+    <nav class="navbar fixed-top navbar-light" style="background-color: #C1C700;">
+        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="100%" height="100%" class="d-inline-block align-top" alt="XProva Logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Assinatura</a>
+                </li>
+            </ul>
+        </div>
+      <a class="navbar-brand" href="#">Fixed top</a>
+    </nav>
+    <div class="container">
+        <h1>Estudar no escuro está te atrasando</h1>
+        <p>A maioria dos concurseiros acha que está estudando certo. Mas, sem um plano real, estão apenas girando em círculos. O <span class="highlight">xprova</span> te dá o controle total dos seus estudos com tecnologia, estratégia e cronogramas inteligentes — tudo pronto para quem quer passar.</p>
+        <p>Você já sentiu que, mesmo estudando horas, não consegue evoluir? Revisões bagunçadas, matérias esquecidas, e a sensação de que o tempo simplesmente evaporou? Isso acontece quando você estuda sem direção. E nesse ritmo, a aprovação vai ficando mais distante — junto com a motivação.</p>
+        <h2>Em breve</h2>
+        <p>Agora imagine outra realidade:</p>
+        <ul>
+            <li>Cada dia começando com clareza sobre o que estudar.</li>
+            <li>Revisões inteligentes que mantêm tudo fresco na sua cabeça.</li>
+            <li>Um cronograma estratégico feito pra você, ajustado com inteligência artificial.</li>
+            <li>Mais tempo, mais foco, menos ansiedade.</li>
+        </ul>
+        <p>🎯 O <span class="highlight">xprova</span> transforma seus estudos em uma jornada com rumo, controle e resultado.</p>
+        <h2>Por que o xprova é diferente?</h2>
+        <ul>
+            <li>✅ Inteligência Artificial para otimizar o seu plano</li>
+            <li>✅ Cronogramas personalizados (e adaptáveis)</li>
+            <li>✅ Acesso em qualquer lugar — direto no seu celular</li>
+            <li>✅ Assinatura acessível, sem surpresas no preço</li>
+        </ul>
+        <p>👉 Comece a estudar com estratégia agora. Cadastre seu e-mail e receba acesso para testar o <span class="highlight">xprova</span> e transformar sua rotina de estudos. Sem cartão. Sem enrolação. Só resultado.</p>
+        <p>🔒 <a href="#">CADASTRAR E TESTAR AGORA</a></p>
+        <footer>
+            <p>Termos de Uso | Política de Privacidade</p>
+            <p>2025 - Todos os direitos reservados</p>
+            <nav>
+                <a href="#">Início</a> | 
+                <a href="#">Planos</a> | 
+                <a href="#">Sobre</a> | 
+                <a href="#">Login</a> | 
+                <a href="#">Assinatura</a>
+            </nav>
+            <p>Built on Bubble</p>
+        </footer>
     </div>
-
-    <div class="d-flex">
-      <button class="btn btn-login">Login</button>
-      <button class="btn btn-assinatura">Assinatura</button>
-    </div>
-  </div>
-</nav>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
