@@ -1,95 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aplicativo XProva</title>
-  <!-- Bootstrap 5 CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xprova Navbar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Estilos personalizados */
-    .hero-section {
-      background-color: #f8f9fa;
-      padding: 60px 0;
-      text-align: center;
+    body {
+      background-color: #c6c800; /* Cor de fundo amarela */
     }
-    .feature-card img {
-      width: 100%;
-      height: 200px;
-      background-color: #dee2e6;
-      display: block;
+    .navbar-custom {
+      background-color: #c6c800;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 60px;
+    }
+    .nav-link {
+      color: black !important;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    .btn-login {
+      background-color: #263238;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 6px 20px;
+      margin-right: 10px;
+    }
+    .btn-assinatura {
+      background-color: #15928F;
+      color: #263238;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 6px 20px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Cabeçalho -->
-  <header class="bg-light py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h3 mb-0">XProva</h1>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="#">
+      <img src="logo.png" alt="Xprova logo"> <!-- Substitua por caminho real -->
+    </a>
 
-  <!-- Seção Hero -->
-  <section class="hero-section">
-    <div class="container">
-      <h2 class="display-4">Bem-vindo ao XProva</h2>
-      <p class="lead">Sua plataforma para avaliações online eficientes.</p>
-      <a href="#" class="btn btn-primary btn-lg mt-3">Comece Agora</a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+      </ul>
     </div>
-  </section>
 
-  <!-- Seção de Recursos -->
-  <section class="py-5">
-    <div class="container">
-      <h3 class="mb-4 text-center">Recursos Principais</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card feature-card mb-4">
-            <img src="#" alt="Recurso 1">
-            <div class="card-body">
-              <h5 class="card-title">Criação de Provas</h5>
-              <p class="card-text">Monte avaliações personalizadas com facilidade.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card feature-card mb-4">
-            <img src="#" alt="Recurso 2">
-            <div class="card-body">
-              <h5 class="card-title">Correção Automática</h5>
-              <p class="card-text">Resultados instantâneos para seus alunos.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card feature-card mb-4">
-            <img src="#" alt="Recurso 3">
-            <div class="card-body">
-              <h5 class="card-title">Relatórios Detalhados</h5>
-              <p class="card-text">Acompanhe o desempenho com análises completas.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="d-flex">
+      <button class="btn btn-login">Login</button>
+      <button class="btn btn-assinatura">Assinatura</button>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <!-- Rodapé -->
-  <footer class="bg-light py-4">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2025 XProva. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
