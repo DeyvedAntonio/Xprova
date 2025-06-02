@@ -1,253 +1,95 @@
-<html lang="pt" class="wf-poppins-n4-active wf-poppins-n5-active wf-poppins-n6-active wf-poppins-n7-active wf-active b-root" style="height: 100%;"><head>
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-<title>XPROVA - Planejamento de Estudos</title>
-<script type="text/javascript">
-    window.bubble_session_uid = '1748883894337x442171697210207700';
-</script>
-<script type="text/javascript">
-    window.headers_source_maps = []
-</script>
-<script type="text/javascript">
-function make_proxy(target, name) {
-  return new Proxy(target, {
-    get: function(target, prop) {
-      if (prop in target) {
-        return target[prop];
-      }
-      throw new Error('The variable ' + name + ' is not fully initialized yet');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aplicativo XProva</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    .hero-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
     }
-  });
-}
-window.appquery = make_proxy({
-  app_version: function() { return "test"; },
-  last_change: function() { return "28833008476";},
-}, 'appquery');
-window.Lib = new Proxy(function() {}, {
-  get: function(target, prop) {
-    if (prop === 'is_skeleton') {
-      return true;
+    .feature-card img {
+      width: 100%;
+      height: 200px;
+      background-color: #dee2e6;
+      display: block;
     }
-    throw new Error('The variable ' + Lib + ' is not fully initialized yet');
-  },
-  apply: function() {
-    return make_proxy({
-      current_user: function() {
-        return make_proxy({ id: "1748883894337x442171697210207700" }, 'Lib().current_user');
-      }
-    }, 'Lib()');
-  }
-});
-</script>
-<script type="text/javascript">
-function load_error_function (event) {
-  return window.load_error_log.push({ msg: event.message, error_url: event.filename, line: event.lineno, col: event.colno })
-}
-window.load_error_log = [];
-window.addEventListener('error', load_error_function);
-window.disableLoadErrorFunction = function () {
-  window.removeEventListener('error', load_error_function);
-}
-</script>
-<meta name="referrer" content="origin">
-<script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['pre_early_js'] = Date.now();
-</script><script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="/package/early_js/05ae9fe83d6b755291132aab9d325d70918aafd336da1bd91a41a31c8b25734b/early.js"></script><script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['post_early_js'] = Date.now();
-</script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular%7CPoppins:500%7CPoppins:500%7CPoppins:600%7CPoppins:600%7CPoppins:700"><script type="text/javascript">(function () {
-    function onWebFontFinish () {
-        window.google_web_fonts_active = true;
-if (window.google_web_fonts_active_cb) {
-    window.google_web_fonts_active_cb();
-}
-        (function fontface_loaded_snippet (font) {
-  if (window.fontface_loaded == null) {
-    window.fontface_loaded = {}
-  }
-  if (font != null) {
-    window.fontface_loaded[font] = true
-  } else {
-    window.all_fontface_loaded = true
-  }
-  if (window.fontface_webfonts_loaded_cb) {
-    return window.fontface_webfonts_loaded_cb(font)
-  }
-})()
-    }
-    const WebFontConfig = {'google': { families: ["Poppins:regular","Poppins:500","Poppins:500","Poppins:600","Poppins:600","Poppins:700"] },
-        active: function() {
-            onWebFontFinish()
-        },
-        inactive: function() {
-            console.log('Failed to load all the fonts');
-            onWebFontFinish()
-        },
-        fontinactive: function(family_name, fvd) {
-            console.log('fontinactive being called for ' + family_name + ', Google says the fonts didnt render');
-            onWebFontFinish()
-        }
-    }
-        window.WebFont.load(WebFontConfig);
-})();</script>
-<script>
-(function initialize_data() {
-const xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (this.readyState === 4 && this.status === 200) {
-        const data = JSON.parse(this.responseText);
-
-        function init_data() {
-            data.forEach(function(d) {
-                Lib().db_instance().initialize_data(d.id, d.data, d.type, d.version);
-            })
-        }
-
-        if (window.Lib && window.Lib.is_skeleton == null) {
-            init_data();
-        } else {
-            window.Lib_post_load = init_data;
-        }
-    }
-};
-xhr.open("GET", "https://xprova-60438.bubbleapps.io/version-test/api/1.1/init/data?location=" + encodeURIComponent(window.location.href), true);
-xhr.send();
-})();
-</script>
-<script type="text/javascript">window.gm_key = "AIzaSyAlT1MzDJL1hTzjgn_-PbAD3NQEIKjcJi4";</script>
-<script type="text/javascript">window.glrl_key_status = false;</script>
-<script type="text/javascript">window.bubble_page_load_id = "1748884118788x657";</script>
-<script type="text/javascript">window.bubble_plp_token = "QIMaTz0O5PFm6gEBEQ6YAshKxBVNlNRUjXPZ+QvwxWc=";</script>
-<script type="text/javascript">window.bubble_is_leanjs = false;</script>
-<script type="text/javascript">window.bubble_shim_modules = false;</script>
-<script type="text/javascript">window.bubble_new_reactivity = false;</script>
-<link rel="icon" type="image/png" href="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/f1530294839424x143528842134401200/Icon-no-clearspace.png">
-<meta name="fragment" content="!">
-<meta name="description" content="Bubble introduces a new way to build a web application. It’s a point-and-click programming tool. Bubble hosts all applications on its cloud platform.">
-<meta name="description" content="Bubble introduces a new way to build a web application. It’s a point-and-click programming tool. Bubble hosts all applications on its cloud platform.">
-<meta name="twitter:card" content="summary_large_image">
-<meta property="og:title" content="Bubble - Visual Programming">
-<meta name="twitter:title" content="Bubble - Visual Programming">
-<meta property="og:site_name" content="Bubble">
-<meta name="twitter:site_name" content="Bubble">
-<meta property="og:description" content="Build stuff without code and launch a startup without a tech-cofounder! Bubble is a visual programing language. Instead of typing code, use a visual editor to build applications. ">
-<meta name="twitter:description" content="Build stuff without code and launch a startup without a tech-cofounder! Bubble is a visual programing language. Instead of typing code, use a visual editor to build applications. ">
-<link rel="image_src" href="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png">
-<meta property="og:image" content="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png">
-<meta name="twitter:image:src" content="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png">
-<meta property="og:url" content="https://xprova-60438.bubbleapps.io/version-test">
-<meta property="og:type" content="website">
-<meta property="fb:app_id" content="340887986039814">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<script type="text/javascript">window._p = '{"id":"app_free2","no_branding":false,"import_export_csv":false,"custom_domain":false}';</script>
-<script type="text/javascript">window.bubble_page_name = "index";</script>
-<script type="text/javascript">window.__bubble_module_mode = false;</script>
-<link type="text/css" href="/package/run_css/7c9df5ece4a832344023f404076a08b6506f998ccb5800b34121ffcf1eb57874/xxprova-60438/test/index/xfalse/xfalse/run.css" rel="stylesheet">
-<script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['pre_run_js'] = Date.now();
-</script>
-<script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="/package/pre_run_jquery_js/dee903a9e36db713e4c86d0cdd96d921e37be0c1293ed8dee29e2e4d7713b9ff/pre_run_jquery.js"></script>
-<script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="/package/run_js/09e5ed751beb1b5eff5d3ee6321c86d2a17a422d67891728c97bb9dd10e665c5/xfalse/x30/run.js"></script>
-<script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['post_run_js'] = Date.now();
-</script>
-<script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['pre_static_js'] = Date.now();
-</script><script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="/package/static_js/e8be8c1ff34eb1684c82a1d7fd591054ada09042c1cae3dffc41d3470a000f02/xxprova-60438/test/index/xnull/xfalse/xfalse/xfalse/static.js"></script><script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['post_static_js'] = Date.now();
-</script>
-<script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['pre_dynamic_js'] = Date.now();
-</script><script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="/package/dynamic_js/f1ef8881afbd53c3feec2fb5edf3f596a3e6621f3fc06fa9f75ca3291d2538aa/xxprova-60438/test/index/xnull/xfalse/xfalse/pt_br/xfalse/xfalse/dynamic.js"></script><script type="text/javascript">
-if (!window._bubble_page_load_data) {
-  window._bubble_page_load_data = {}
-}
-if (!window._bubble_page_load_data.js_execution_timings) {
-  window._bubble_page_load_data.js_execution_timings = {}
-}
-window._bubble_page_load_data.js_execution_timings['post_dynamic_js'] = Date.now();
-</script>
-<script type="text/javascript">window._bubble_page_load_data.js_execution_timings.plugin_js_start_execution = Date.now();</script>
-<script type="text/javascript">window._bubble_page_load_data.js_execution_timings.plugin_js_end_execution = Date.now();</script>
+  </style>
 </head>
-<body cz-shortcut-listen="true" style="height: 100%;"><script type="text/javascript">
-window.addEventListener('DOMContentLoaded', function () {
-  if (window.appquery == null) {
-    const css = document.createElement('style');
-css.type='text/css';
-css.appendChild(document.createTextNode(".warning-message-failure {padding: 30px; line-height: 1.5; white-space: pre; z-index: 1000000; position: fixed; width: 100%; height: 100%; background: white;}"));
-document.getElementsByTagName("head")[0].appendChild(css);
-const newDiv = document.createElement("div");
-newDiv.className = "warning-message-failure";
-newDiv.innerHTML = "Your browser was unable to load some necessary resources, contact your IT network administrator and ask them to allow access to <br><br>     d3dqmih97rcqmh.cloudfront.net <br>     abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/ <br>     d1muf25xaso8hp.cloudfront.net";
-document.body.appendChild(newDiv);
-    httpRequest = new XMLHttpRequest();
-httpRequest.open('POST', '/user/m', true);
-httpRequest.setRequestHeader('Content-Type', 'application/json');
-httpRequest.send(JSON.stringify({measures: {page_load_error: 1, url: document.location.href, errors: window.load_error_log}}));
-  };
-});
-</script><script type="text/javascript">window.addEventListener('DOMContentLoaded', function () {if (window.appquery && window.app == null) {const css = document.createElement('style');
-css.type='text/css';
-css.appendChild(document.createTextNode(".warning-message-failure {padding: 30px; line-height: 1.5; white-space: pre; z-index: 1000000; position: fixed; width: 100%; height: 100%; background: white;}"));
-document.getElementsByTagName("head")[0].appendChild(css);
-const newDiv = document.createElement("div");
-newDiv.className = "warning-message-failure";
-newDiv.innerHTML = "Your browser was unable to load the application data. We've been notified of the issue. Please try again in a few moments and make sure not to use ad-blockers.";
-document.body.appendChild(newDiv);}});</script>
-<img style="display: none;" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<body>
 
-<div class="bubble-element Page baTaGaYf bubble-r-container flex column main-page"><div class="bubble-element Group baTaHaEaJ bubble-r-container flex column"><div class="bubble-element Group baTaHaHaP bubble-r-container flex column"><div class="bubble-element Group baTaHaGaH bubble-r-container flex row"><div class="bubble-element Image baTaHaGaZ"><div class="aspect-ratio"></div><img src="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/cdn-cgi/image/w=768,h=960,f=auto,dpr=1,fit=contain/f1748795184465x857802170266106600/hero_xprova_1.jpg"></div><div class="bubble-element Group baTaHaHh bubble-r-container flex column"><div class="bubble-element Text baTaHaHb bubble-r-vertical-center"><div><div align="center"><strong><font size="5">Estudar no escuro está te atrasando</font></strong>.<br></div><div align="justify" style="white-space: pre-line">A maioria dos concurseiros acha que está estudando certo. Mas, sem um plano real, estão apenas girando em círculos.<br></div></div></div><div class="bubble-element Text baTaHaGf bubble-r-vertical-center"><div><div align="justify" style="white-space: pre-line">O xprova te dá o controle total dos seus estudos com tecnologia, estratégia e cronogramas inteligentes — tudo pronto para quem quer passar.<br></div></div></div><div class="bubble-element Text baTaHaIaH bubble-r-vertical-center"><div><div align="justify" style="white-space: pre-line"><strong><font size="4">Você já sentiu que, mesmo estudando horas, não consegue evoluir?</font></strong>
-Revisões bagunçadas, matérias esquecidas, e a sensação de que o tempo simplesmente evaporou?
+  <!-- Cabeçalho -->
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3 mb-0">XProva</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-Isso acontece quando você estuda sem direção.
+  <!-- Seção Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <h2 class="display-4">Bem-vindo ao XProva</h2>
+      <p class="lead">Sua plataforma para avaliações online eficientes.</p>
+      <a href="#" class="btn btn-primary btn-lg mt-3">Comece Agora</a>
+    </div>
+  </section>
 
-E nesse ritmo, a aprovação vai ficando mais distante — junto com a motivação<br></div></div></div><div class="bubble-element Text baTaHaHp bubble-r-vertical-center" style="background-color: rgb(42, 153, 145);"><div>Em breve</div></div></div></div><div class="bubble-element Group baTaHaGaN bubble-r-container flex row"><div class="bubble-element Image baTaHaGx"><div class="aspect-ratio"></div><img src="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/cdn-cgi/image/w=384,h=480,f=auto,dpr=1,fit=contain/f1748795502845x385323420969961860/hero_xprova_2.jpg"></div><div class="bubble-element Text baTaHaGl bubble-r-vertical-center"><div><div align="justify" style="white-space: pre-line"><strong><em>Agora imagine outra realidade</em></strong>:<br></div><div align="justify" style="white-space: pre-line">Cada dia começando com clareza sobre o que estudar.<br></div>
-<div align="justify" style="white-space: pre-line">Revisões inteligentes que mantêm tudo fresco na sua cabeça.<br></div><br><div align="justify" style="white-space: pre-line">Um cronograma estratégico feito pra você, ajustado com inteligência artificial.<br></div><br><div align="justify" style="white-space: pre-line">Mais tempo, mais foco, menos ansiedade.<br></div></div></div><div class="bubble-element Text baTaHaIaN bubble-r-vertical-center"><div>🎯 O xprova transforma seus estudos em uma jornada com rumo, controle e resultado.
-<br><strong>Por que o xprova é diferente?</strong><br>✅ Inteligência Artificial para otimizar o seu plano<br>✅ Cronogramas personalizados (e adaptáveis)<br>✅ Acesso em qualquer lugar — direto no seu celular<br>✅ Assinatura acessível, sem surpresas no preço</div></div><div class="bubble-element Image baTaHaHaJ"><div class="aspect-ratio"></div><img src="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/cdn-cgi/image/w=384,h=504,f=auto,dpr=1,fit=contain/f1748795738578x148905786461757800/hero_xprova_4.jpg"></div></div><div class="bubble-element Group baTaHaGaT bubble-r-container flex row"><div class="bubble-element Image baTaHaHaD"><div class="aspect-ratio"></div><img src="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/cdn-cgi/image/w=384,h=480,f=auto,dpr=1,fit=contain/f1748795565683x467992407361291800/hero_xprova_3.jpg"></div><div class="bubble-element Group baTaHaIp bubble-r-container flex column"><div class="bubble-element Text baTaHaIaB bubble-r-vertical-center"><div><div align="justify" style="white-space: pre-line">👉 Comece a estudar com estratégia agora.<br></div>
-<div align="justify" style="white-space: pre-line">Cadastre seu e-mail e receba acesso para testar o xprova e transformar sua rotina de estudos.<br></div><br><div align="justify" style="white-space: pre-line">Sem cartão. Sem enrolação. Só resultado.<br></div></div></div><div class="bubble-element Text baTaHaIaZ bubble-r-vertical-center" style="background-color: rgb(40, 60, 69);"><div>🔒 CADASTRAR E TESTAR AGORA</div></div></div></div></div></div><div class="bubble-element Group baTaHaGaB bubble-r-container flex row" style="background-color: rgb(193, 199, 0);"><div class="bubble-element Group baTaHaKaV bubble-r-container flex row"><div class="bubble-element Group baTaHaJaH bubble-r-container flex row"><button class="bubble-element Icon baTaHaJaT" tabindex="" style="display: flex; background-color: rgb(225, 48, 108);"><svg viewBox="0 0 32 32" data-icon-set="fa" style="width: 100%; height: 100%;"><use width="32" height="32" href="/static/icon_libraries/fontawesome-4.7.0.svg#fa-instagram"></use></svg></button><button class="bubble-element Icon baTaHaJaZ" tabindex="" style="display: flex; background-color: rgb(29, 161, 242);"><svg viewBox="0 0 32 32" data-icon-set="fa" style="width: 100%; height: 100%;"><use width="32" height="32" href="/static/icon_libraries/fontawesome-4.7.0.svg#fa-twitter"></use></svg></button><button class="bubble-element Icon baTaHaJaN" tabindex="" style="display: flex; background-color: rgb(255, 0, 0);"><svg viewBox="0 0 32 32" data-icon-set="fa" style="width: 100%; height: 100%;"><use width="32" height="32" href="/static/icon_libraries/fontawesome-4.7.0.svg#fa-youtube-play"></use></svg></button><button class="bubble-element Icon baTaHaJf" tabindex="" style="display: flex; background-color: rgb(59, 89, 152);"><svg viewBox="0 0 32 32" data-icon-set="fa" style="width: 100%; height: 100%;"><use width="32" height="32" href="/static/icon_libraries/fontawesome-4.7.0.svg#fa-facebook"></use></svg></button></div><div class="bubble-element Group baTaHaJt bubble-r-container flex column"><div class="bubble-element Text baTaHaKaD bubble-r-vertical-center"><div>Termos de Uso</div></div><div class="bubble-element Text baTaHaKaJ bubble-r-vertical-center"><div>Política de Privacidade</div></div><div class="bubble-element Text baTaHaKaP bubble-r-vertical-center"><div>2025 - Todos os direitos reservados</div></div></div><div class="bubble-element Group baTaHaJaB bubble-r-container flex column"><div class="bubble-element Image baTaHaJn"><div class="aspect-ratio"></div><img src="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/cdn-cgi/image/w=384,h=137,f=auto,dpr=1,fit=contain/f1748801833215x871804713616460400/logo_xprova_1.png"></div></div></div></div></div><div class="bubble-element FloatingGroup baTaHaFaX floating-group bubble-r-container flex row" data-outline="true" style="background-color: var(--color_surface_default); box-shadow: 0px 2px 2px 0px var(--color_bTHBQ_default);"><div class="bubble-element Group baTaHaDf bubble-r-container flex row" style="background-color: rgb(193, 199, 0);"><div class="bubble-element Group baTaHaFq bubble-r-container flex row"><div class="bubble-element Group baTaHaDl bubble-r-container flex column"><div class="bubble-element Image baTaHaDx"><div class="aspect-ratio"></div><img src="https://abf1260ff257bcdfc4dbaeb3af238465.cdn.bubble.io/cdn-cgi/image/w=384,h=137,f=auto,dpr=1,fit=contain/f1748790936251x800157337409607200/logo_xprova_1.png"></div></div><div class="bubble-element Group baTaHaEaD bubble-r-container flex row"><div class="bubble-element Group baTaHaFaF bubble-r-container flex row"><button class="bubble-element Button baTaHaEaP">Início</button><button class="bubble-element Button baTaHaEaV">Planos</button><button class="bubble-element Button baTaHaEb">Sobre</button></div><div class="bubble-element Group baTaHaEt bubble-r-container flex row"><div class="bubble-element Text baTaHaFe bubble-r-vertical-center" style="background: none rgb(40, 60, 69);"><div>Login</div></div><div class="bubble-element Text baTaHaFk bubble-r-vertical-center" style="background: none rgb(42, 153, 145);"><div>Assinatura</div></div></div></div></div></div></div><div class="page-is-loaded"></div><div style="width: 128px !important; position: fixed !important; bottom: 10px !important; right: 10px !important; height: 29px !important; z-index: 100000000000 !important; box-shadow: 0px 0px 20px 0 #00000069 !important; background: #0205D3 !important; border-radius: 3px !important;"><div style="position: absolute;" class="notranslate" translate="no"><div style=""><img alt="Bubble" src="https://a3f482aa37473c68f97b76bd2e4a3782.cdn.bubble.io/f1585607370503x914556455591480200/banner-icon.svg" style="width: 15px !important; margin-top: 7px !important; margin-left: 6px !important; float: left;"><div style="color: white; font-size: 12px; font-family: Arial, sans-serif; margin-top: 9px; float: left; margin-left: 8px; width: 95px; font-weight: bold;">Built on Bubble</div></div></div><a target="_blank" style="width: 100%; height: 100%; position: absolute;" href="https://bubble.io?utm_source=app_mention&amp;utm_content=xprova-60438"></a></div></body></html>
+  <!-- Seção de Recursos -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="mb-4 text-center">Recursos Principais</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card feature-card mb-4">
+            <img src="#" alt="Recurso 1">
+            <div class="card-body">
+              <h5 class="card-title">Criação de Provas</h5>
+              <p class="card-text">Monte avaliações personalizadas com facilidade.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card mb-4">
+            <img src="#" alt="Recurso 2">
+            <div class="card-body">
+              <h5 class="card-title">Correção Automática</h5>
+              <p class="card-text">Resultados instantâneos para seus alunos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card mb-4">
+            <img src="#" alt="Recurso 3">
+            <div class="card-body">
+              <h5 class="card-title">Relatórios Detalhados</h5>
+              <p class="card-text">Acompanhe o desempenho com análises completas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 XProva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
