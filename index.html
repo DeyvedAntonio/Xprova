@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteúdo da Página</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>XProva - planejamento de estudos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,38 +28,86 @@
     </style>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-light" style="background-color: #C1C700;">
-        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="100%" height="100%" class="d-inline-block align-top" alt="XProva Logo">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
-    <div class="container">
-        <h1>Estudar no escuro está te atrasando</h1>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #C1C700;">
+            <div class="container">
+                <img src="src/img/logo_xprova_1.png" width="324" height="115" class="d-inline-block align-top" alt="XProva Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex flex-row mb-3">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-2" aria-current="page" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-2" href="#">Planos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-2" href="#">Sobre</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-lg mt-5 pt-5">
+        <h1 class="mt-3 pt-3">Estudar no escuro está te atrasando</h1>
+
         <p>A maioria dos concurseiros acha que está estudando certo. Mas, sem um plano real, estão apenas girando em círculos. O <span class="highlight">xprova</span> te dá o controle total dos seus estudos com tecnologia, estratégia e cronogramas inteligentes — tudo pronto para quem quer passar.</p>
+        
         <p>Você já sentiu que, mesmo estudando horas, não consegue evoluir? Revisões bagunçadas, matérias esquecidas, e a sensação de que o tempo simplesmente evaporou? Isso acontece quando você estuda sem direção. E nesse ritmo, a aprovação vai ficando mais distante — junto com a motivação.</p>
-        <h2>Em breve</h2>
+        
+        <h2 class="btn btn-info">EM BREVE</h2>
+        
         <p>Agora imagine outra realidade:</p>
+        
         <ul>
             <li>Cada dia começando com clareza sobre o que estudar.</li>
             <li>Revisões inteligentes que mantêm tudo fresco na sua cabeça.</li>
             <li>Um cronograma estratégico feito pra você, ajustado com inteligência artificial.</li>
             <li>Mais tempo, mais foco, menos ansiedade.</li>
         </ul>
+        
         <p>🎯 O <span class="highlight">xprova</span> transforma seus estudos em uma jornada com rumo, controle e resultado.</p>
+        
         <h2>Por que o xprova é diferente?</h2>
+        
         <ul>
             <li>✅ Inteligência Artificial para otimizar o seu plano</li>
             <li>✅ Cronogramas personalizados (e adaptáveis)</li>
             <li>✅ Acesso em qualquer lugar — direto no seu celular</li>
             <li>✅ Assinatura acessível, sem surpresas no preço</li>
         </ul>
-        <p>👉 Comece a estudar com estratégia agora. Cadastre seu e-mail e receba acesso para testar o <span class="highlight">xprova</span> e transformar sua rotina de estudos. Sem cartão. Sem enrolação. Só resultado.</p>
-        <p>🔒 <a href="#">CADASTRAR E TESTAR AGORA</a></p>
-        <footer>
-            <p>Termos de Uso | Política de Privacidade</p>
-            <p>2025 - Todos os direitos reservados</p>
-        </footer>
+        
+        <p>👉 Comece a estudar com estratégia em breve. Cadastre seu e-mail e receba acesso para testar o <span class="highlight">xprova</span> e transformar sua rotina de estudos. Sem cartão. Sem enrolação. Só resultado.</p>
+        
+        <p class="btn btn-secondary">🔒 <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> EM BEVE CADASTRAR E TESTAR</a></p>
+        
     </div>
+    <footer>
+        <nav class="navbar fixed-bottom" style="background-color: #C1C700;">
+            <div class="container-lg text-center justify-content-md-center">
+                <div class="row row-cols-3 align-items-center">
+                    <div class="col-3">
+                        <img src="src/img/instagram.svg" alt="Intagram">
+                        <img src="src/img/youtube.svg" alt="YouTube">
+                        <img src="src/img/facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="col-6">
+                        <p>Termos de Uso </p>
+                        <p> Política de Privacidade</p>
+                        <p>2025 - Todos os direitos reservados</p>                    
+                    </div>
+                    <div class="col-3">
+                        <img src="src/img/logo_xprova_1.png" width="324" height="115" class="d-inline-block align-top" alt="XProva Logo">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
